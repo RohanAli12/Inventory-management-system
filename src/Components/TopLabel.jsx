@@ -3,10 +3,10 @@ import Button from "../Components/Button";
 import DetailedBtn from "../Components/DetailedBtn";
 import {Link } from "react-router-dom";
 
-const TopLabel = ({label, isBtnHide = false, background = "#fff"}) => {
+const TopLabel = ({label, isBtnHide = false, color = "#000", background = "#fff"}) => {
   return (
     <div style={{background}} className="py-3 px-4 w-full flex items-center justify-between">
-      <span className="text-xl font-medium">{label}</span>
+      <span style={{color}} className="text-xl font-medium">{label}</span>
     { isBtnHide &&
       <div className="flex gap-3 items-center justify-center">
         <Button

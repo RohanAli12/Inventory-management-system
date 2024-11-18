@@ -13,13 +13,15 @@ const BottomPaginationContainer = ({
 
   const handleItemsPerPageChange = (event) => {
     setItemsPerPage(Number(event.target.value)); // Update the state with the selected value
-    setCurrentPage(1);
+    setCurrentPage(currentPage);
   };
 
   const handlePageChange = (page) => {
     if (page > 0 && page <= totalPages) {
       setCurrentPage(page);
+      console.log(page); 
     }
+    console.log(page);
   };
   return (
     <div className="flex items-center justify-between px-6 bg-white border border-x-0 border-b-0 border-t-[#0000001A]">
@@ -47,7 +49,7 @@ const BottomPaginationContainer = ({
           <GrPrevious
             onClick={() => handlePageChange(currentPage - 1)}
             disabled={currentPage === 1}
-            className={`w-4 h-4 ${currentPage === 1 ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
+            className={`w-4 h-4 ${currentPage === 1 ? "opacity-50" : "cursor-pointer"}`}
           />
            {Array.from({ length: totalPages }, (_, index) => (
             <Button
@@ -62,7 +64,7 @@ const BottomPaginationContainer = ({
           <GrNext
             onClick={() => handlePageChange(currentPage + 1)}
             disabled={currentPage === totalPages}
-            className={`w-4 h-4 ${currentPage === totalPages ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
+            className={`w-4 h-4 ${currentPage === totalPages ? "opacity-50" : "cursor-pointer"}`}
           />
         </div>
       </div>

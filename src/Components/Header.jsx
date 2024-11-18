@@ -8,6 +8,7 @@ import { LiaUserCircleSolid } from "react-icons/lia";
 import { LuSettings } from "react-icons/lu";
 import { PiBellLight } from "react-icons/pi";
 import { IoIosArrowDown } from "react-icons/io";
+import Input from "./input";
 
 const Header = () => {
   const dropdownRef = useRef(null);
@@ -48,14 +49,7 @@ const Header = () => {
             <img src={Logo} width={60}/>
           </div>
           <div className="flex items-center justify-between w-[70%] h-[70%] bg-white rounded-sm px-3">
-            <input
-              type="search"
-              name=""
-              id="search"
-              className="bg-transparent w-4/5 focus:outline-none focus: border-none"
-              placeholder="Search here"
-            />
-
+            <Input type="search" placeholder="Search here" width="300px"/>
             <IoSearchOutline className="w-[2vw] h-[4vh] hover:scale-105 transition cursor-pointer" style={{ color: "#0000004D" }} />
           </div>
         </div>

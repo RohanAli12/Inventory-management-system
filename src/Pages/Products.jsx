@@ -16,16 +16,18 @@ const Products = () => {
     indexOfLastItem
   );
   return (
-    <div className="flex flex-col items-center h-full justify-center box-border pr-[3%] pb-[3%] bg-[#F8F9FF]" >
+    <div className="flex flex-col items-center h-full justify-start box-border pr-[3%] pb-[3%] bg-[#F8F9FF]">
       <TopLabel label={"Inventory"} isBtnHide={true} />
       <div className="flex flex-col w-full overflow-hidden items-center justify-between box-border">
-        <div className="flex flex-col w-full cursor-pointer box-border">
-          <InventoryDetailList width="20%" borderTop ="1px solid #118cf0"/>
-        </div>
-        <div className="flex flex-col w-full overflow-y-auto cursor-pointer">
-          {currentItems.map((_, index) => (
-            <InventoryDetailList key={index} />
-          ))}
+        <div className="flex flex-col  w-full h-full overflow-hidden items-center justify-start box-border">
+          <div className="flex flex-col w-full cursor-pointer box-border">
+            <InventoryDetailList width="20%" borderTop="1px solid #118cf0" />
+          </div>
+          <div className="flex flex-col w-full overflow-y-auto cursor-pointer">
+            {currentItems.map((_, index) => (
+              <InventoryDetailList key={index} />
+            ))}
+          </div>
         </div>
         <div className="flex flex-col w-full">
           <BottomPaginationContainer
