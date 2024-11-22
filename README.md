@@ -20,4 +20,4 @@ localhost:5173
 
 ### Here is some representation of my `Inventory management system` project.
 
-![Project `Inventory management system` Screenshot](src/assets/Screenshot.png)
+![Project `Inventory management system` Screenshot](src/assets/DEVPOS.png)
