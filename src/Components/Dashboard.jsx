@@ -80,7 +80,7 @@ const Dashboard = () => {
   ];
   return (
     <div className="w-[97%] flex flex-col gap-5 p-5">
-      <div className="flex w-full gap-4">
+      <div className="flex w-full gap-5">
         {StatsDataTop.map((item) => (
           <StatsCard
             title={item.title}
@@ -92,19 +92,19 @@ const Dashboard = () => {
           />
         ))}
       </div>
-      <div className="w-full flex gap-4">
-        <div className="p-5 w-[75%] rounded-3xl bg-white shadow-[6px_6px_54px_0px_#0000000D]">
-          <TopLabel label="Sales Chart" optionInput={options}/>
+      <div className="w-full flex gap-5">
+        <div className="p-4 w-[75%] rounded-3xl bg-white shadow-[6px_6px_54px_0px_#0000000D]">
+          <TopLabel label="Sales Chart" optionInput={options} link={false} detailBtn={false}/>
           <SalesChart />
         </div>
-        <div className="p-5 w-1/4 flex flex-col gap-2 rounded-3xl bg-white shadow-[6px_6px_54px_0px_#0000000D]">
+        <div className="p-5 w-[25%] flex flex-col gap-4 rounded-3xl bg-white shadow-[6px_6px_54px_0px_#0000000D]">
           <Text text="Top Sellings" fontSize="4vh" fontWeight="400" width="100%" color="#636466"/>
-          <div className="flex flex-col gap-4">
-          {[...Array(6)].map((_, i) => (<div className="w-full p-5 bg-zinc-300 rounded-lg"></div>))}
+          <div className="flex flex-col gap-3">
+          {[...Array(6)].map((_, i) => (<div className="w-full p-6 bg-zinc-200 rounded-lg"></div>))}
           </div>
         </div>
       </div>
-      <div className="flex justify-center w-full gap-4">
+      <div className="flex justify-center w-full gap-5">
         {StatsDataBottom.map((item) => (
           <StatsCard
             title={item.title}

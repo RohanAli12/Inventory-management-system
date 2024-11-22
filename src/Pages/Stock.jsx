@@ -1,12 +1,12 @@
 import React from 'react'
-import TopLabel from "../Components/TopLabel"
+import MainAllData from "../Components/MainAllData"
 
 
 const Stock = () => {
   return (
-    <div className="flex items-center justify-center">
-      <TopLabel label={"Stock"} />
-    </div>
+    <>
+    <MainAllData label="Stock" isBtnHide={true} texts={['Product Name', 'SKU', 'Retail', 'Cost', 'Stock', 'Warehouse', 'Supplier']} btnContent={["Refresh" , "Filter"]} optionInput={false} link={true} detailBtn={true} border="1px solid #118CF0" color="#118CF0" />
+  </>
   )
 }
 

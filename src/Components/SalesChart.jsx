@@ -32,7 +32,7 @@ const SalesChart = () => {
     datasets: [
       {
         label: 'Sales Data',
-        data: [20, 30, 50, 54, 33, 40, 37, 57, 30, 83, 37, 56, 52, 57, 90, 58, 57, 61, 21, 80], // Example data
+        data: [20, 30, 50, 54, 33, 40, 37, 57, 30, 83, 37, 56, 52, 57, 80, 90, 57, 61, 21, 80], // Example data
         borderColor: '#007bff',
         backgroundColor: function () {
           const chart = chartRef.current;

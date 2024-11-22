@@ -51,7 +51,7 @@ const Add = () => {
       <TopLabel
         label={"Add Product (Inventory)"}
         color="#211951"
-        background="#118CF033"
+        backgroundColor="#118CF033"
       />
       <TopLabel label={"Basic Information"} />
       <div className="flex w-full gap-10 items-start flex-wrap">

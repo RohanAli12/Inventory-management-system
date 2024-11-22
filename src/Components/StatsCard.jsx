@@ -3,7 +3,7 @@ import Text from './Text';
 
 const StatsCard = ({title, value, icon, trend, ColTrend, path}) => {
   return (
-    <div className='p-6 rounded-3xl bg-white relative w-1/4 cursor-pointer shadow-[6px_6px_10px_0px_#0000000D]'>
+    <div className='p-6 rounded-3xl bg-white relative w-[25%] cursor-pointer shadow-[6px_6px_10px_0px_#0000000D]'>
         <div className='flex flex-col'>
             <Text text={title} fontSize="2.5vh" width="70%" color="#202224" fontWeight="300"/>
             <Text text={value} fontSize="4vh" fontWeight="500"/>
