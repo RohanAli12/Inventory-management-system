@@ -1,6 +1,6 @@
 import React from "react";
 import TopLabel from "../Components/TopLabel";
-import Input from "../Components/input";
+import Input from "../Components/Input";
 
 const Add = () => {
   const BasicInformation = [
