@@ -8,7 +8,7 @@ import { LiaUserCircleSolid } from "react-icons/lia";
 import { LuSettings } from "react-icons/lu";
 import { PiBellLight } from "react-icons/pi";
 import { IoIosArrowDown } from "react-icons/io";
-import Input from "./input";
+import Input from "./Input";
 
 const Header = () => {
   const dropdownRef = useRef(null);
